@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+    <head>
+        <title>Curso de Javascript</title>
+    </head>
+    <body>
+        <script>
+            function getEmail() {
+                var email = prompt("Insira seu email");
+                return email;
+            }
+
+            // Executado após 5 segundos depois do load da página
+            // Não é utilizado o () após o nome da função pois estamos passando a
+            // função getEmail como parâmetro para a função setTimeout
+            setTimeout(getEmail, 5000);
+
+            // Executado a cada 2 segundos
+            setInterval(getEmail, 2000);
+        </script>
+    </body>
+</html>
